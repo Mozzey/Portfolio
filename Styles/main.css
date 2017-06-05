@@ -1,0 +1,40 @@
+body {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/********** NavBar **********/
+
+.nav-bar {
+
+}
+
+.nav-bar-items {
+
+}
+
+.nav-bar-items li {
+	display: inline-block;
+	float: right;
+	margin-left: 2em;
+	list-style: none;
+}
+
+.nav-bar-items li a {
+	text-decoration: none;
+}
+
+
+/********** About **********/
+
+.about-wrapper {
+	clear: both;
+	margin: 0 auto;
+
+}
+
+.about-image {
+	display: block;
+	margin: 0 auto;
+}
+
