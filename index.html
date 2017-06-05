@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Michael Cacciano Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
 	<link rel="stylesheet" type="text/css" href="Styles/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lobster" rel="stylesheet">
 </head>
 
 
@@ -10,21 +12,27 @@
 
 <!-- Navbar and Hero Header -->
 	<header>
-		<h1>Michael Cacciano</h1>
+		
+		<div class="main-header-wrapper">
+			<h1 id="main-header">Michael Cacciano</h1>
+			<p id="main-header-subs">Developer / Creator / Learner</p>
+		</div>
+		
 		<nav class="nav-bar">
 			<ul class="nav-bar-items">
 				<li>
-					<a href="#">About</a>
+					<a id="about-link" href="#">About</a>
 				</li>
 				<li>
-					<a href="#">Skills</a>
+					<a id="skills-link" href="#">Skills</a>
 				</li>
 				<li>
-					<a href="#">Projects</a>
+					<a id="projects-link" href="#">Projects</a>
 				</li>
 				<li>
-					<a href="#">Blog</a>
+					<a id="blog-link" href="#">Blog</a>
 				</li>
+				<hr id="link-line">
 			</ul>
 		</nav>
 	</header>
@@ -41,34 +49,34 @@
 <!-- IM NOT 100% SURE WHAT I WANT TO PUT HERE YET!!!!!!!!!!!!!!!! I HAVE A FEW IDEAS -->
 
 <!-- Link to finished projects -->
-	<div>
-		<a href="#">Link to finished Projects</a>
-	</div>
+	<a href="#" id="project-link"><span id="project-link-span">Link to finished Projects</span></a>
+
 
 
 <!-- Social Media Buttons -->
 	<div>
 		<ul>
-				<li>
-					<a href="#">GitHub</a>
-				</li>
-				<li>
-					<a href="#">Twitter</a>
-				</li>
-				<li>
-					<a href="#">TeamTreeHouse</a>
-				</li>
-				<li>
-					<a href="#">LinkdIN</a>
-				</li>
-			</ul>
+			<li>
+				<a href="#">GitHub</a>
+				<img src="images/github-icon.png">
+			</li>
+			<li>
+				<a href="#">Twitter</a>
+			</li>
+			<li>
+				<a href="#">TeamTreeHouse</a>
+			</li>
+			<li>
+				<a href="#">LinkdIN</a>
+			</li>
+		</ul>
 	</div>
 
 
 <!-- Footer Links and Created By: -->
 	<footer>
-		<div>
-			<ul>
+		<div class="footer-wrap">
+			<ul id="footer-bar">
 				<li>
 					<a href="#">About</a>
 				</li>
@@ -83,7 +91,7 @@
 				</li>
 			</ul>
 
-			<h5>Created By:</h5>
+			<h5>Designed and  Developed by: Michael Cacciano</h5>
 
 		</div>
 	</footer>

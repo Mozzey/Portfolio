@@ -1,40 +1,121 @@
+/* 
+	font-family: 'Lobster', cursive;
+	font-family: 'Dancing Script', cursive; */
+
 body {
 	margin: 0 auto;
 	width: 100%;
 }
 
-/********** NavBar **********/
+/********** Header **********/
+
+.main-header-wrapper {
+	display: block;
+	font-family: 'Lobster', cursive;
+	margin: 30% auto;
+	text-align: center;
+}
+
+.main-header-wrapper h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 3em;
+}
+
+
+
+/********** Nav-bar **********/
 
 .nav-bar {
-
+	margin: 50% auto;
 }
 
 .nav-bar-items {
 
+	padding: 0;
+	text-align: center;
 }
 
 .nav-bar-items li {
+	border: black solid 1px;
 	display: inline-block;
-	float: right;
-	margin-left: 2em;
+	font-size: 1.4em;
 	list-style: none;
+	margin-left: 20px;
 }
 
 .nav-bar-items li a {
+	color: black;
+	padding: 9%;
 	text-decoration: none;
 }
 
+#about-link:hover {
+	background-color: black;
+	color: white;
+}
+
+#skills-link:hover {
+	background-color: red;
+	color: white;
+}
+
+#projects-link:hover {
+	background-color: green;
+	color: white;
+}
+
+#blog-link:hover {
+	background-color: skyblue;
+	color: white;
+}
 
 /********** About **********/
 
 .about-wrapper {
 	clear: both;
-	margin: 0 auto;
+	margin: 40% auto;
 
 }
 
 .about-image {
+	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
 }
+ 
+.about-blurb {
+	text-align: center;
+	margin: 2em auto;
+}
 
+
+/********** Skills **********/
+
+
+#project-link{
+	color: black;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+#project-link-span:hover {
+	background-color: gray;
+	border: black solid 1px;
+	color: white;
+}
+
+/********** Footer **********/
+
+.footer-wrap li {
+	border: black solid 1px;
+	display: inline-block;
+	font-size: 1.4em;
+	list-style: none;
+	margin-left: 20px;
+}
+
+.footer-wrap li a {
+	color: black;
+	text-decoration: none;
+}
