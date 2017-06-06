@@ -10,6 +10,15 @@ body {
 /********** Header **********/
 
 .main-header-wrapper {
+	background-image: url('/images/coffeInBrackets.png');
+	width: 100%;
+}
+
+#main-header {
+	border: black solid 3px;
+}
+
+.main-header-wrapper {
 	display: block;
 	font-family: 'Lobster', cursive;
 	margin: 30% auto;
@@ -21,6 +30,9 @@ body {
 	font-size: 3em;
 }
 
+#main-header-subs {
+	padding: 4px;
+}
 
 
 /********** Nav-bar **********/
@@ -30,24 +42,26 @@ body {
 }
 
 .nav-bar-items {
-
 	padding: 0;
 	text-align: center;
 }
 
 .nav-bar-items li {
-	border: black solid 1px;
 	display: inline-block;
+	float: left;
 	font-size: 1.4em;
 	list-style: none;
-	margin-left: 20px;
+	margin-left: 8%;
+	margin-bottom: 50%;
 }
 
 .nav-bar-items li a {
+	background-color: white;
+	border: black solid 1px;
 	color: black;
 	padding: 9%;
 	text-decoration: none;
-}
+} 
 
 #about-link:hover {
 	background-color: black;
