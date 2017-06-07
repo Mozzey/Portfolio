@@ -1,13 +1,55 @@
-/* line 1, ../scss/main.scss */
-body {
+/* line 1, ../scss/layouts/_header.scss */
+header {
+  background-image: url("/images/coffeInBrackets.png");
+  height: 450px;
+  text-align: center;
+  width: 100%;
+}
+/* line 7, ../scss/layouts/_header.scss */
+header .logo {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.4em;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 3em;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+/* line 17, ../scss/layouts/_header.scss */
+header .logo span {
+  border: black solid 6px;
+  padding: .3em;
+}
+/* line 23, ../scss/layouts/_header.scss */
+header #kicker {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 1.3em;
+  margin: 3.5em 0 5.8em 0;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+/****** NAVBAR ******/
+/* line 35, ../scss/layouts/_header.scss */
+.nav-bar {
   margin: 0 auto;
   width: 100%;
 }
-
-/* line 6, ../scss/main.scss */
-header {
-  background-image: url("/images/coffeInBrackets.png");
-  display: block;
-  margin: 30% auto;
-  text-align: center;
+/* line 39, ../scss/layouts/_header.scss */
+.nav-bar .nav-links {
+  display: inline-block;
+  list-style: none;
+}
+/* line 43, ../scss/layouts/_header.scss */
+.nav-bar .nav-links a {
+  background-color: white;
+  border: black solid 1px;
+  color: black;
+  font-weight: 700;
+  margin-left: 20px;
+  padding: 3px 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
