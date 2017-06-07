@@ -1,0 +1,61 @@
+.about-wrapper {
+	margin-top: 150px;
+	text-align: center;
+	width: 100%;
+
+	h3 {
+		font-family: 'Dancing Script', cursive;
+		font-size: 2.5em;
+	}
+
+	.about-image {
+		border-radius: 50%;
+	}
+}
+
+.skill-lockup {
+	color: #999;
+	max-width: 700px;
+	margin: 100px auto;
+	@extend %clearfix;
+
+	.skill-unit {
+		float: left;
+		width: 350px;
+	}
+
+	.skill-label {
+		margin: 0 0 10px 50px;
+	}
+
+	.skill-icons {
+		font-size: 0;
+		margin: 2px 0 30px;
+		text-align: center;
+
+		span {
+			border-radius: 50%;
+			background-color: #333;
+			display: inline-block;
+			height: 20px;
+			margin-right: 5px;
+			width: 20px;
+
+			&:after {
+				background: #fff;
+				border-radius: 50%;
+				content: "";
+				display: block;
+				height: 13px;
+				margin: 4px;
+				width: 13px; 
+			}
+
+		@for $i from 1 through 10 {
+			&.skill-#{$i} span:nth-child(n+#{$i})
+			background: yellow;
+		}
+
+		}
+	}
+}

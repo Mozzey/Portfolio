@@ -1,55 +1,117 @@
-/* line 1, ../scss/layouts/_header.scss */
-header {
-  background-image: url("/images/coffeInBrackets.png");
-  height: 450px;
-  text-align: center;
-  width: 100%;
-}
-/* line 7, ../scss/layouts/_header.scss */
-header .logo {
-  color: white;
-  font-family: 'Dancing Script', cursive;
-  font-size: 3.4em;
-  font-weight: 700;
-  margin: 0;
-  padding-top: 3em;
-  -webkit-text-stroke: 1px black;
-  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-/* line 17, ../scss/layouts/_header.scss */
-header .logo span {
-  border: black solid 6px;
-  padding: .3em;
-}
-/* line 23, ../scss/layouts/_header.scss */
-header #kicker {
-  color: white;
-  font-family: 'Lobster', cursive;
-  font-size: 1.3em;
-  margin: 3.5em 0 5.8em 0;
-  -webkit-text-stroke: 1px black;
-  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
+/*
+Syntax error: Invalid CSS after "			background:": expected pseudoclass or pseudoelement, was " yellow;"
+        on line 56 of C:/Users/Mozzey/WebDev/Portfolio/scss/layouts/_about.scss
+        from line 7 of C:/Users/Mozzey/WebDev/Portfolio/scss/main.scss
 
-/****** NAVBAR ******/
-/* line 35, ../scss/layouts/_header.scss */
-.nav-bar {
-  margin: 0 auto;
-  width: 100%;
-}
-/* line 39, ../scss/layouts/_header.scss */
-.nav-bar .nav-links {
-  display: inline-block;
-  list-style: none;
-}
-/* line 43, ../scss/layouts/_header.scss */
-.nav-bar .nav-links a {
-  background-color: white;
-  border: black solid 1px;
-  color: black;
-  font-weight: 700;
-  margin-left: 20px;
-  padding: 3px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+Backtrace:
+C:/Users/Mozzey/WebDev/Portfolio/scss/layouts/_about.scss:56
+C:/Users/Mozzey/WebDev/Portfolio/scss/main.scss:7
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1129:in `expected'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1066:in `expected'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1048:in `expr!'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:777:in `pseudo'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:663:in `simple_selector_sequence'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:631:in `_selector'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:602:in `selector'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:586:in `selector_sequence'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:511:in `ruleset'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:526:in `block_contents'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:229:in `for_directive'
+org/jruby/RubyKernel.java:2092:in `send'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:163:in `special_directive'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:135:in `directive'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:536:in `block_child'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:27:in `parse'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:342:in `_to_tree'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:272:in `to_tree'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:222:in `visit_import'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+C:/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+org/jruby/RubyArray.java:1603:in `each'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+org/jruby/RubyMethod.java:133:in `call'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
+org/jruby/RubyArray.java:1603:in `each'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+org/jruby/RubyArray.java:1603:in `each'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+org/jruby/RubyKernel.java:1419:in `loop'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+C:/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:\bin\compass:12:in `(root)'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"			background:\": expected pseudoclass or pseudoelement, was \" yellow;\"\A         on line 56 of C:/Users/Mozzey/WebDev/Portfolio/scss/layouts/_about.scss\A         from line 7 of C:/Users/Mozzey/WebDev/Portfolio/scss/main.scss"; }
