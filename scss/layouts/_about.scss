@@ -51,10 +51,7 @@
 				width: 13px; 
 			}
 
-		@for $i from 1 through 10 {
-			&.skill-#{$i} span:nth-child(n+#{$i})
-			background: yellow;
-		}
+
 
 		}
 	}
