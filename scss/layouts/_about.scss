@@ -14,10 +14,15 @@
 }
 
 .skill-lockup {
-	color: #999;
 	max-width: 700px;
 	margin: 100px auto;
 	@extend %clearfix;
+
+	#skill-section {
+		font-family: 'Dancing Script', cursive;
+		font-size: 2.5em;
+		text-align: center;
+	}
 
 	.skill-unit {
 		float: left;
@@ -25,6 +30,7 @@
 	}
 
 	.skill-label {
+		color: #999;
 		margin: 0 0 10px 50px;
 	}
 
@@ -35,14 +41,14 @@
 
 		span {
 			border-radius: 50%;
-			background-color: #333;
+			background-color: #8f785b;
 			display: inline-block;
 			height: 20px;
 			margin-right: 5px;
 			width: 20px;
 
 			&:after {
-				background: #fff;
+				background-color: #fff;
 				border-radius: 50%;
 				content: "";
 				display: block;
@@ -50,9 +56,13 @@
 				margin: 4px;
 				width: 13px; 
 			}
+		}
 
-
-
+		@for $i from 1 through 10 {
+			&.skill-#{$i} span:nth-child(n+#{$i}) {
+				background-color: #dbd5d4;
+			}
 		}
 	}
 }
+

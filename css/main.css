@@ -44,43 +44,89 @@ li {
 
 /* line 16, ../scss/layouts/_about.scss */
 .skill-lockup {
-  color: #999;
   max-width: 700px;
   margin: 100px auto;
 }
-/* line 22, ../scss/layouts/_about.scss */
+/* line 21, ../scss/layouts/_about.scss */
+.skill-lockup #skill-section {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  text-align: center;
+}
+/* line 27, ../scss/layouts/_about.scss */
 .skill-lockup .skill-unit {
   float: left;
   width: 350px;
 }
-/* line 27, ../scss/layouts/_about.scss */
+/* line 32, ../scss/layouts/_about.scss */
 .skill-lockup .skill-label {
+  color: #999;
   margin: 0 0 10px 50px;
 }
-/* line 31, ../scss/layouts/_about.scss */
+/* line 37, ../scss/layouts/_about.scss */
 .skill-lockup .skill-icons {
   font-size: 0;
   margin: 2px 0 30px;
   text-align: center;
 }
-/* line 36, ../scss/layouts/_about.scss */
+/* line 42, ../scss/layouts/_about.scss */
 .skill-lockup .skill-icons span {
   border-radius: 50%;
-  background-color: #333;
+  background-color: #8f785b;
   display: inline-block;
   height: 20px;
   margin-right: 5px;
   width: 20px;
 }
-/* line 44, ../scss/layouts/_about.scss */
+/* line 50, ../scss/layouts/_about.scss */
 .skill-lockup .skill-icons span:after {
-  background: #fff;
+  background-color: #fff;
   border-radius: 50%;
   content: "";
   display: block;
   height: 13px;
   margin: 4px;
   width: 13px;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-1 span:nth-child(n+1) {
+  background-color: #dbd5d4;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-2 span:nth-child(n+2) {
+  background-color: #dbd5d4;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-3 span:nth-child(n+3) {
+  background-color: #dbd5d4;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-4 span:nth-child(n+4) {
+  background-color: #dbd5d4;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-5 span:nth-child(n+5) {
+  background-color: #dbd5d4;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-6 span:nth-child(n+6) {
+  background-color: #dbd5d4;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-7 span:nth-child(n+7) {
+  background-color: #dbd5d4;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-8 span:nth-child(n+8) {
+  background-color: #dbd5d4;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-9 span:nth-child(n+9) {
+  background-color: #dbd5d4;
+}
+/* line 62, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-10 span:nth-child(n+10) {
+  background-color: #dbd5d4;
 }
 
 /* line 1, ../scss/layouts/_header.scss */

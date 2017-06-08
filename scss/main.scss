@@ -2,7 +2,9 @@
 @import 'base/_vars.scss';
 @import 'base/_mixins.scss';
 
-@import 'partials/normalize.scss';
+
+@import 'partials/_variables.scss';
+@import 'partials/_mixins.scss';
 
 @import 'layouts/_about.scss';
 @import 'layouts/_header.scss';
