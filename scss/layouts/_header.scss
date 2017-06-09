@@ -1,5 +1,7 @@
+// LOGO
+
 header {
-	background-image: url('/images/coffeInBrackets.png');
+	background-image: url('/images/logobg.jpg');
 	height: 450px;
 	text-align: center;
 	width: 100%;
@@ -7,47 +9,57 @@ header {
 	.logo {
 		color: white;
 		font-family: 'Dancing Script', cursive;
-		font-size: 3.4em;
+		font-size: 72px;
 		font-weight: 700;
 		margin: 0;
-		padding-top: 3em;
+		padding-top: 110px;
 		-webkit-text-stroke: 1px black;
 		text-shadow: $shadow;
+	}
 
-		span {
-			border: white solid 6px;
-			padding: .3em;
-		}
+	span {
+
 	}
 
 	#kicker {
-		color: white;
+		color: #000;
 		font-family: 'Lobster', cursive;
 		font-size: 1.3em;
-		margin: 3.5em 0 5.8em 0;
-
+		margin: 0;
 	}
 }
 
 /****** NAVBAR ******/
 
 .nav-bar {
-	margin: 0 auto;
+	margin-top: 145px;
 	width: 100%;
 
-	.nav-links {
-		display: inline-block;
-		text-align: center;
+	a {
+		background-color: white;
+		border: black solid 1px;
+		color: black;
+		font-weight: 700;
+		margin-left: 13px;
+		padding: 1px 2px;
+		text-transform: uppercase;
+	}
+}
 
-		a {
-			background-color: white;
-			border: black solid 1px;
-			color: black;
-			font-weight: 700;
-			margin-left: 20px;
-			padding: 3px 0;
-			text-transform: uppercase;
+
+@media screen and (min-width: 528px) {
+	.logo span {
+		padding: 22px;
 		}
+	}
+
+@media screen and (min-width: 471px) {
+	.logo-container .logo {
+		padding-top: 175px;
+	}
+
+	.nav-bar {
+		padding-top: 15px;
 	}
 }
 

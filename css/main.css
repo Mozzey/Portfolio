@@ -26,50 +26,58 @@ li {
   clear: both;
 }
 
-/* line 1, ../scss/layouts/_about.scss */
+/* line 6, ../scss/layouts/_about.scss */
 .about-wrapper {
-  margin-top: 150px;
+  margin-top: 250px;
   text-align: center;
   width: 100%;
 }
-/* line 6, ../scss/layouts/_about.scss */
+/* line 11, ../scss/layouts/_about.scss */
 .about-wrapper h3 {
   font-family: 'Dancing Script', cursive;
   font-size: 2.5em;
 }
-/* line 11, ../scss/layouts/_about.scss */
+/* line 16, ../scss/layouts/_about.scss */
 .about-wrapper .about-image {
   border-radius: 50%;
+  padding-top: 30px;
+}
+/* line 21, ../scss/layouts/_about.scss */
+.about-wrapper .about-blurb {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 50%;
 }
 
-/* line 16, ../scss/layouts/_about.scss */
+/* line 32, ../scss/layouts/_about.scss */
 .skill-lockup {
   max-width: 700px;
   margin: 100px auto;
 }
-/* line 21, ../scss/layouts/_about.scss */
+/* line 37, ../scss/layouts/_about.scss */
 .skill-lockup #skill-section {
   font-family: 'Dancing Script', cursive;
   font-size: 2.5em;
   text-align: center;
 }
-/* line 27, ../scss/layouts/_about.scss */
+/* line 43, ../scss/layouts/_about.scss */
 .skill-lockup .skill-unit {
   float: left;
   width: 350px;
 }
-/* line 32, ../scss/layouts/_about.scss */
+/* line 48, ../scss/layouts/_about.scss */
 .skill-lockup .skill-label {
   color: #999;
   margin: 0 0 10px 50px;
 }
-/* line 37, ../scss/layouts/_about.scss */
+/* line 53, ../scss/layouts/_about.scss */
 .skill-lockup .skill-icons {
   font-size: 0;
   margin: 2px 0 30px;
   text-align: center;
 }
-/* line 42, ../scss/layouts/_about.scss */
+/* line 58, ../scss/layouts/_about.scss */
 .skill-lockup .skill-icons span {
   border-radius: 50%;
   background-color: #8f785b;
@@ -78,7 +86,7 @@ li {
   margin-right: 5px;
   width: 20px;
 }
-/* line 50, ../scss/layouts/_about.scss */
+/* line 66, ../scss/layouts/_about.scss */
 .skill-lockup .skill-icons span:after {
   background-color: #fff;
   border-radius: 50%;
@@ -88,96 +96,104 @@ li {
   margin: 4px;
   width: 13px;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-1 span:nth-child(n+1) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-1 span:nth-child(n+2) {
   background-color: #dbd5d4;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-2 span:nth-child(n+2) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-2 span:nth-child(n+3) {
   background-color: #dbd5d4;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-3 span:nth-child(n+3) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-3 span:nth-child(n+4) {
   background-color: #dbd5d4;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-4 span:nth-child(n+4) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-4 span:nth-child(n+5) {
   background-color: #dbd5d4;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-5 span:nth-child(n+5) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-5 span:nth-child(n+6) {
   background-color: #dbd5d4;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-6 span:nth-child(n+6) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-6 span:nth-child(n+7) {
   background-color: #dbd5d4;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-7 span:nth-child(n+7) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-7 span:nth-child(n+8) {
   background-color: #dbd5d4;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-8 span:nth-child(n+8) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-8 span:nth-child(n+9) {
   background-color: #dbd5d4;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-9 span:nth-child(n+9) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-9 span:nth-child(n+10) {
   background-color: #dbd5d4;
 }
-/* line 62, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-10 span:nth-child(n+10) {
+/* line 78, ../scss/layouts/_about.scss */
+.skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
   background-color: #dbd5d4;
 }
 
-/* line 1, ../scss/layouts/_header.scss */
+/* line 3, ../scss/layouts/_header.scss */
 header {
-  background-image: url("/images/coffeInBrackets.png");
+  background-image: url("/images/logobg.jpg");
   height: 450px;
   text-align: center;
   width: 100%;
 }
-/* line 7, ../scss/layouts/_header.scss */
+/* line 9, ../scss/layouts/_header.scss */
 header .logo {
   color: white;
   font-family: 'Dancing Script', cursive;
-  font-size: 3.4em;
+  font-size: 72px;
   font-weight: 700;
   margin: 0;
-  padding-top: 3em;
+  padding-top: 110px;
   -webkit-text-stroke: 1px black;
   text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
-/* line 17, ../scss/layouts/_header.scss */
-header .logo span {
-  border: white solid 6px;
-  padding: .3em;
-}
-/* line 23, ../scss/layouts/_header.scss */
+/* line 24, ../scss/layouts/_header.scss */
 header #kicker {
-  color: white;
+  color: #000;
   font-family: 'Lobster', cursive;
   font-size: 1.3em;
-  margin: 3.5em 0 5.8em 0;
+  margin: 0;
 }
 
 /****** NAVBAR ******/
 /* line 34, ../scss/layouts/_header.scss */
 .nav-bar {
-  margin: 0 auto;
+  margin-top: 145px;
   width: 100%;
 }
 /* line 38, ../scss/layouts/_header.scss */
-.nav-bar .nav-links {
-  display: inline-block;
-  text-align: center;
-}
-/* line 42, ../scss/layouts/_header.scss */
-.nav-bar .nav-links a {
+.nav-bar a {
   background-color: white;
   border: black solid 1px;
   color: black;
   font-weight: 700;
-  margin-left: 20px;
-  padding: 3px 0;
+  margin-left: 13px;
+  padding: 1px 2px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 528px) {
+  /* line 51, ../scss/layouts/_header.scss */
+  .logo span {
+    padding: 22px;
+  }
+}
+@media screen and (min-width: 471px) {
+  /* line 57, ../scss/layouts/_header.scss */
+  .logo-container .logo {
+    padding-top: 175px;
+  }
+
+  /* line 61, ../scss/layouts/_header.scss */
+  .nav-bar {
+    padding-top: 15px;
+  }
 }
