@@ -36,16 +36,45 @@ header {
 	width: 100%;
 
 	a {
-		background-color: white;
+		background-color: #b3c7db;
 		border: black solid 1px;
-		color: black;
+		color: white;
 		font-weight: 700;
 		margin-left: 13px;
 		padding: 1px 2px;
 		text-transform: uppercase;
+		text-shadow: $shadow;
 	}
 }
 
+@media screen and (min-width: 1500px) {
+	.logo-container{
+
+		.logo span {
+			font-size: 1.6em;
+		}
+
+		#kicker {
+			font-size: 1.5em;
+		}
+	}
+
+	.nav-bar {
+		margin-top: 90px;
+
+		a {
+			font-size: 1.6em;
+		}
+	}
+}
+
+@media screen and (min-width: 867px) {
+	.nav-bar {
+		a {
+			font-size: 1.3em;
+		}
+	}
+}
 
 @media screen and (min-width: 528px) {
 	.logo span {

@@ -1,9 +1,14 @@
 /* line 1, ../scss/base/_base.scss */
+html {
+  margin: 0 auto;
+}
+
+/* line 5, ../scss/base/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 5, ../scss/base/_base.scss */
+/* line 9, ../scss/base/_base.scss */
 li {
   list-style: none;
 }
@@ -171,29 +176,117 @@ header #kicker {
 }
 /* line 38, ../scss/layouts/_header.scss */
 .nav-bar a {
-  background-color: white;
+  background-color: #b3c7db;
   border: black solid 1px;
-  color: black;
+  color: white;
   font-weight: 700;
   margin-left: 13px;
   padding: 1px 2px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
+@media screen and (min-width: 1500px) {
+  /* line 53, ../scss/layouts/_header.scss */
+  .logo-container .logo span {
+    font-size: 1.6em;
+  }
+  /* line 57, ../scss/layouts/_header.scss */
+  .logo-container #kicker {
+    font-size: 1.5em;
+  }
+
+  /* line 62, ../scss/layouts/_header.scss */
+  .nav-bar {
+    margin-top: 90px;
+  }
+  /* line 65, ../scss/layouts/_header.scss */
+  .nav-bar a {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 867px) {
+  /* line 73, ../scss/layouts/_header.scss */
+  .nav-bar a {
+    font-size: 1.3em;
+  }
+}
 @media screen and (min-width: 528px) {
-  /* line 51, ../scss/layouts/_header.scss */
+  /* line 80, ../scss/layouts/_header.scss */
   .logo span {
     padding: 22px;
   }
 }
 @media screen and (min-width: 471px) {
-  /* line 57, ../scss/layouts/_header.scss */
+  /* line 86, ../scss/layouts/_header.scss */
   .logo-container .logo {
     padding-top: 175px;
   }
 
-  /* line 61, ../scss/layouts/_header.scss */
+  /* line 90, ../scss/layouts/_header.scss */
   .nav-bar {
     padding-top: 15px;
+  }
+}
+/* line 1, ../scss/layouts/_footer.scss */
+.lockup {
+  background-image: url("/images/logobg.jpg");
+  height: 125px;
+  width: 100%;
+}
+/* line 6, ../scss/layouts/_footer.scss */
+.lockup .footer-link-group {
+  padding-top: 90px;
+  width: 100%;
+}
+/* line 10, ../scss/layouts/_footer.scss */
+.lockup .footer-link-group a {
+  background-color: #b3c7db;
+  border: black solid 1px;
+  color: white;
+  font-weight: 700;
+  font-size: .8em;
+  padding: 1px 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+/* line 22, ../scss/layouts/_footer.scss */
+.lockup p {
+  float: right;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1em;
+  margin: 0;
+}
+
+@media screen and (min-width: 528px) {
+  /* line 32, ../scss/layouts/_footer.scss */
+  .lockup .footer-link-group {
+    font-size: 1.2em;
+    padding-top: 60px;
+  }
+
+  /* line 37, ../scss/layouts/_footer.scss */
+  .lockup p {
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  }
+}
+@media screen and (min-width: 867px) {
+  /* line 45, ../scss/layouts/_footer.scss */
+  .lockup .footer-link-group {
+    font-size: 1.8em;
+    padding-top: 50px;
+  }
+  /* line 49, ../scss/layouts/_footer.scss */
+  .lockup .footer-link-group a {
+    margin-left: 30px;
+  }
+
+  /* line 54, ../scss/layouts/_footer.scss */
+  .lockup p {
+    color: white;
+    font-size: 2em;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   }
 }

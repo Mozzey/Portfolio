@@ -1,0 +1,59 @@
+.lockup {
+	background-image: url('/images/logobg.jpg');
+	height: 125px;
+	width: 100%;
+
+	.footer-link-group {
+		padding-top: 90px;
+		width: 100%;
+
+		a {
+			background-color: #b3c7db;
+			border: black solid 1px;
+			color: white;
+			font-weight: 700;
+			font-size: .8em;
+			padding: 1px 2px;
+			text-transform: uppercase;
+			text-shadow: $shadow;
+		}
+	}
+
+	p {
+		float: right;
+		font-family: 'Dancing Script', cursive;
+		font-size: 1em;
+		margin: 0;
+		}
+}
+
+
+@media screen and (min-width: 528px) {
+	.lockup .footer-link-group {
+		font-size: 1.2em;
+		padding-top: 60px;
+	}
+
+	.lockup p {
+		color: white;
+		font-size: 1.5em;
+		text-shadow: $shadow;
+	}
+}
+
+@media screen and (min-width: 867px) {
+	.lockup .footer-link-group {
+		font-size: 1.8em;
+		padding-top: 50px;
+
+		a {
+			margin-left: 30px;
+		}
+	}
+
+	.lockup p {
+		color: white;
+		font-size: 2em;
+		text-shadow: $shadow;
+	}
+}
