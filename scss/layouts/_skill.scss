@@ -1,0 +1,76 @@
+
+//SKILL SECTION
+
+.skill-wrapper {
+	background: $skillBG;
+	height: 700px;
+	padding-top: 100px;
+
+	.skill-lockup {
+		background-color: $skillBG;
+		max-width: 700px;
+		margin: 100px auto;
+		text-align: center;
+		@extend %clearfix;
+
+		#skill-section {
+			font-family: $danceText;
+			font-size: 2.5em;
+			text-align: center;
+		}
+
+		.skill-unit {
+			float: left;
+			width: 350px;
+		}
+
+		.skill-label {
+			color: #999;
+			margin: 0 0 10px 0;
+		}
+
+		.skill-icons {
+			font-size: 0;
+			margin: 2px 0 30px;
+			text-align: center;
+
+			span {
+				border-radius: 50%;
+				background-color: #333;
+				display: inline-block;
+				height: 20px;
+				margin-right: 5px;
+				width: 20px;
+
+				&:after {
+					background-color: #fff;
+					border-radius: 50%;
+					content: "";
+					display: block;
+					height: 13px;
+					margin: 4px;
+					width: 13px; 
+				}
+			}
+
+			@for $i from 1 through 10 {
+				&.skill-#{$i} span:nth-child(n+#{$i + 1}) {
+					background-color: #dbd5d4;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 436px) {
+	.skill-wrapper .skill-lockup {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.skill-wrapper {
+		padding-top: 150px;
+	}
+}

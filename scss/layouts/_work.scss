@@ -1,0 +1,33 @@
+.work-container {
+	margin: 0 auto;
+	max-width: 968px;
+	padding: 100px 0;
+	@extend %clearfix;
+
+	h3 {
+		font-family: $danceText;
+		font-size: 2.5em;
+		margin: 50px 0;
+		padding-top: 50px;
+		text-align: center;
+	}
+
+	.work-unit {
+		background: pink;
+		display: block;
+		float: left;
+		height: 150px;
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 528px) {
+	.work-container {
+		padding-top: 50px;
+
+		h3 {
+			padding-top: 0;
+			padding-bottom: 50px;
+		}
+	}
+}

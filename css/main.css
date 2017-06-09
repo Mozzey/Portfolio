@@ -15,11 +15,11 @@ li {
 
 /*For clearing floats like a boss h5bp.com/q*/
 /* line 2, ../scss/base/_mixins.scss */
-.skill-lockup {
+.skill-wrapper .skill-lockup, .work-container {
   *zoom: 1;
 }
 /* line 5, ../scss/base/_mixins.scss */
-.skill-lockup:before, .skill-lockup:after {
+.skill-wrapper .skill-lockup:before, .work-container:before, .skill-wrapper .skill-lockup:after, .work-container:after {
   display: table;
   content: "";
   /* Fixes Opera/contenteditable bug:
@@ -27,119 +27,32 @@ li {
   line-height: 0;
 }
 /* line 12, ../scss/base/_mixins.scss */
-.skill-lockup:after {
+.skill-wrapper .skill-lockup:after, .work-container:after {
   clear: both;
 }
 
-/* line 6, ../scss/layouts/_about.scss */
+/* line 4, ../scss/layouts/_about.scss */
 .about-wrapper {
   margin-top: 250px;
   text-align: center;
   width: 100%;
 }
-/* line 11, ../scss/layouts/_about.scss */
+/* line 9, ../scss/layouts/_about.scss */
 .about-wrapper h3 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 2.5em;
 }
-/* line 16, ../scss/layouts/_about.scss */
+/* line 14, ../scss/layouts/_about.scss */
 .about-wrapper .about-image {
   border-radius: 50%;
   padding-top: 30px;
 }
-/* line 21, ../scss/layouts/_about.scss */
+/* line 19, ../scss/layouts/_about.scss */
 .about-wrapper .about-blurb {
   display: flex;
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 25px 0 80px 0;
   width: 50%;
-}
-
-/* line 32, ../scss/layouts/_about.scss */
-.skill-lockup {
-  max-width: 700px;
-  margin: 100px auto;
-}
-/* line 37, ../scss/layouts/_about.scss */
-.skill-lockup #skill-section {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2.5em;
-  text-align: center;
-}
-/* line 43, ../scss/layouts/_about.scss */
-.skill-lockup .skill-unit {
-  float: left;
-  width: 350px;
-}
-/* line 48, ../scss/layouts/_about.scss */
-.skill-lockup .skill-label {
-  color: #999;
-  margin: 0 0 10px 50px;
-}
-/* line 53, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons {
-  font-size: 0;
-  margin: 2px 0 30px;
-  text-align: center;
-}
-/* line 58, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons span {
-  border-radius: 50%;
-  background-color: #8f785b;
-  display: inline-block;
-  height: 20px;
-  margin-right: 5px;
-  width: 20px;
-}
-/* line 66, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons span:after {
-  background-color: #fff;
-  border-radius: 50%;
-  content: "";
-  display: block;
-  height: 13px;
-  margin: 4px;
-  width: 13px;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-1 span:nth-child(n+2) {
-  background-color: #dbd5d4;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-2 span:nth-child(n+3) {
-  background-color: #dbd5d4;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-3 span:nth-child(n+4) {
-  background-color: #dbd5d4;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-4 span:nth-child(n+5) {
-  background-color: #dbd5d4;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-5 span:nth-child(n+6) {
-  background-color: #dbd5d4;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-6 span:nth-child(n+7) {
-  background-color: #dbd5d4;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-7 span:nth-child(n+8) {
-  background-color: #dbd5d4;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-8 span:nth-child(n+9) {
-  background-color: #dbd5d4;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-9 span:nth-child(n+10) {
-  background-color: #dbd5d4;
-}
-/* line 78, ../scss/layouts/_about.scss */
-.skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
-  background-color: #dbd5d4;
 }
 
 /* line 3, ../scss/layouts/_header.scss */
@@ -152,7 +65,7 @@ header {
 /* line 9, ../scss/layouts/_header.scss */
 header .logo {
   color: white;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 72px;
   font-weight: 700;
   margin: 0;
@@ -193,37 +106,39 @@ header #kicker {
   }
   /* line 57, ../scss/layouts/_header.scss */
   .logo-container #kicker {
+    color: white;
     font-size: 1.5em;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   }
 
-  /* line 62, ../scss/layouts/_header.scss */
+  /* line 64, ../scss/layouts/_header.scss */
   .nav-bar {
     margin-top: 90px;
   }
-  /* line 65, ../scss/layouts/_header.scss */
+  /* line 67, ../scss/layouts/_header.scss */
   .nav-bar a {
     font-size: 1.6em;
   }
 }
 @media screen and (min-width: 867px) {
-  /* line 73, ../scss/layouts/_header.scss */
+  /* line 75, ../scss/layouts/_header.scss */
   .nav-bar a {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 528px) {
-  /* line 80, ../scss/layouts/_header.scss */
+  /* line 82, ../scss/layouts/_header.scss */
   .logo span {
     padding: 22px;
   }
 }
 @media screen and (min-width: 471px) {
-  /* line 86, ../scss/layouts/_header.scss */
+  /* line 88, ../scss/layouts/_header.scss */
   .logo-container .logo {
     padding-top: 175px;
   }
 
-  /* line 90, ../scss/layouts/_header.scss */
+  /* line 92, ../scss/layouts/_header.scss */
   .nav-bar {
     padding-top: 15px;
   }
@@ -253,7 +168,7 @@ header #kicker {
 /* line 22, ../scss/layouts/_footer.scss */
 .lockup p {
   float: right;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 1em;
   margin: 0;
 }
@@ -288,5 +203,153 @@ header #kicker {
     color: white;
     font-size: 2em;
     text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  }
+}
+/* line 4, ../scss/layouts/_skill.scss */
+.skill-wrapper {
+  background: #d6d6d6;
+  height: 700px;
+  padding-top: 100px;
+}
+/* line 9, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup {
+  background-color: #d6d6d6;
+  max-width: 700px;
+  margin: 100px auto;
+  text-align: center;
+}
+/* line 16, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup #skill-section {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5em;
+  text-align: center;
+}
+/* line 22, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-unit {
+  float: left;
+  width: 350px;
+}
+/* line 27, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-label {
+  color: #999;
+  margin: 0 0 10px 0;
+}
+/* line 32, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons {
+  font-size: 0;
+  margin: 2px 0 30px;
+  text-align: center;
+}
+/* line 37, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons span {
+  border-radius: 50%;
+  background-color: #333;
+  display: inline-block;
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+}
+/* line 45, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons span:after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 13px;
+  margin: 4px;
+  width: 13px;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-1 span:nth-child(n+2) {
+  background-color: #dbd5d4;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-2 span:nth-child(n+3) {
+  background-color: #dbd5d4;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-3 span:nth-child(n+4) {
+  background-color: #dbd5d4;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-4 span:nth-child(n+5) {
+  background-color: #dbd5d4;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-5 span:nth-child(n+6) {
+  background-color: #dbd5d4;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-6 span:nth-child(n+7) {
+  background-color: #dbd5d4;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-7 span:nth-child(n+8) {
+  background-color: #dbd5d4;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-8 span:nth-child(n+9) {
+  background-color: #dbd5d4;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-9 span:nth-child(n+10) {
+  background-color: #dbd5d4;
+}
+/* line 57, ../scss/layouts/_skill.scss */
+.skill-wrapper .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
+  background-color: #dbd5d4;
+}
+
+@media screen and (min-width: 436px) {
+  /* line 67, ../scss/layouts/_skill.scss */
+  .skill-wrapper .skill-lockup {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 73, ../scss/layouts/_skill.scss */
+  .skill-wrapper {
+    padding-top: 150px;
+  }
+}
+/* line 1, ../scss/layouts/_socialmedia.scss */
+.social-media-container {
+  height: 200px;
+  width: 100%;
+  clear: both;
+}
+
+/* line 1, ../scss/layouts/_work.scss */
+.work-container {
+  margin: 0 auto;
+  max-width: 968px;
+  padding: 100px 0;
+}
+/* line 7, ../scss/layouts/_work.scss */
+.work-container h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5em;
+  margin: 50px 0;
+  padding-top: 50px;
+  text-align: center;
+}
+/* line 15, ../scss/layouts/_work.scss */
+.work-container .work-unit {
+  background: pink;
+  display: block;
+  float: left;
+  height: 150px;
+  width: 25%;
+}
+
+@media screen and (min-width: 528px) {
+  /* line 25, ../scss/layouts/_work.scss */
+  .work-container {
+    padding-top: 50px;
+  }
+  /* line 28, ../scss/layouts/_work.scss */
+  .work-container h3 {
+    padding-top: 0;
+    padding-bottom: 50px;
   }
 }

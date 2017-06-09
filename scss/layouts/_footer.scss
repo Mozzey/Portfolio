@@ -21,7 +21,7 @@
 
 	p {
 		float: right;
-		font-family: 'Dancing Script', cursive;
+		font-family: $danceText;
 		font-size: 1em;
 		margin: 0;
 		}
@@ -57,3 +57,4 @@
 		text-shadow: $shadow;
 	}
 }
+
