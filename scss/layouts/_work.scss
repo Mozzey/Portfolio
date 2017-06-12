@@ -1,5 +1,5 @@
 .work-container {
-	margin: 0 auto;
+	margin: 0 auto 100px;
 	max-width: 968px;
 	padding: 100px 0;
 	@extend %clearfix;
@@ -16,8 +16,53 @@
 		background: pink;
 		display: block;
 		float: left;
-		height: 150px;
+		padding-top: 16%;
 		width: 25%;
+		background-image: url(/images/coffeInBrackets.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		overflow: hidden;
+
+		@media screen and (max-width: 716px) {
+			padding-top: 25%;
+			width: 50%;
+}
+
+		.work-overlay {
+			position: absolute;
+			top: 100%;
+			right: 0px;
+			bottom: null;
+			left: 0px;
+			background: fade-out($skillBG, 0.5);
+			height: 100%;
+
+			strong {
+				display: block;
+				font-family: $danceText;
+				font-weight: 300;
+				font-size: 1.5em;
+				padding: 50px 0 0 0;
+
+				@media screen and (max-width: 716px) {
+					padding: 20px 0 0 0;
+				}
+			}
+
+		}
+
+		&:hover .work-overlay {
+			position: absolute;
+			top: 0%;
+			right: 0px;
+			bottom: null;
+			left: 0px;
+			text-align: center;
+			color: white;
+			transition-duration: 0.3s;
+		}
 	}
 }
 

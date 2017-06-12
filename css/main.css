@@ -321,7 +321,7 @@ header #kicker {
 
 /* line 1, ../scss/layouts/_work.scss */
 .work-container {
-  margin: 0 auto;
+  margin: 0 auto 100px;
   max-width: 968px;
   padding: 100px 0;
 }
@@ -338,16 +338,64 @@ header #kicker {
   background: pink;
   display: block;
   float: left;
-  height: 150px;
+  padding-top: 16%;
   width: 25%;
+  background-image: url(/images/coffeInBrackets.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 716px) {
+  /* line 15, ../scss/layouts/_work.scss */
+  .work-container .work-unit {
+    padding-top: 25%;
+    width: 50%;
+  }
+}
+/* line 33, ../scss/layouts/_work.scss */
+.work-container .work-unit .work-overlay {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  bottom: null;
+  left: 0px;
+  background: rgba(214, 214, 214, 0.5);
+  height: 100%;
+}
+/* line 42, ../scss/layouts/_work.scss */
+.work-container .work-unit .work-overlay strong {
+  display: block;
+  font-family: "Dancing Script", cursive;
+  font-weight: 300;
+  font-size: 1.5em;
+  padding: 50px 0 0 0;
+}
+@media screen and (max-width: 716px) {
+  /* line 42, ../scss/layouts/_work.scss */
+  .work-container .work-unit .work-overlay strong {
+    padding: 20px 0 0 0;
+  }
+}
+/* line 56, ../scss/layouts/_work.scss */
+.work-container .work-unit:hover .work-overlay {
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  bottom: null;
+  left: 0px;
+  text-align: center;
+  color: white;
+  transition-duration: 0.3s;
 }
 
 @media screen and (min-width: 528px) {
-  /* line 25, ../scss/layouts/_work.scss */
+  /* line 70, ../scss/layouts/_work.scss */
   .work-container {
     padding-top: 50px;
   }
-  /* line 28, ../scss/layouts/_work.scss */
+  /* line 73, ../scss/layouts/_work.scss */
   .work-container h3 {
     padding-top: 0;
     padding-bottom: 50px;
