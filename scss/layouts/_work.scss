@@ -5,11 +5,13 @@
 	@extend %clearfix;
 
 	h3 {
+		color: $orangeCream;
 		font-family: $danceText;
 		font-size: 2.5em;
 		margin: 50px 0;
 		padding-top: 50px;
 		text-align: center;
+		text-shadow: $shadow;
 	}
 
 	.work-unit {

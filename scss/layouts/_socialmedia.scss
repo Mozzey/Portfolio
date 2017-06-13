@@ -1,5 +1,28 @@
 .social-media-container {
-	height: 200px;
-	width: 100%;
-	clear: both;
+	max-width: 800px;
+	height: 500px;
+	margin: 0 auto;
+
+	h3 {
+		color: $orangeCream;
+		font-family: $danceText;
+		font-size: 2.5em;
+		text-align: center;
+		margin: 50px 0 150px 0;
+		text-shadow: $shadow;
+	}
+
+	a {
+		width: 25%;
+		padding: 0 45px;
+
+		img {
+			padding: 9px;
+			width: 100px;
+
+			// @media screen and (min-width: 830px) {
+
+			// }
+		}
+	}
 }

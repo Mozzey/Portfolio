@@ -1,5 +1,7 @@
 .lockup {
-	background-image: url('/images/logobg.jpg');
+	background-image: url('/images/logobg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 125px;
 	width: 100%;
 
@@ -7,8 +9,8 @@
 		padding-top: 90px;
 		width: 100%;
 
-		a {
-			background-color: #b3c7db;
+		a { 
+			background-color: $orangeCream;
 			border: black solid 1px;
 			color: white;
 			font-weight: 700;
